@@ -1,17 +1,28 @@
 {
   "name": "emoji-unicode-version",
   "version": "0.1.0",
-  "description": "",
+  "description": "Get the unicode version for a given emoji name",
+  "author": "Eric Eastwood <contact@ericeastwood.com> (http://ericeastwood.com/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MadLittleMods/emoji-unicode-version.git"
+  },
+  "keywords": [
+    "emoji",
+    "emojis",
+    "unicode",
+    "emojione"
+  ],
   "main": "index.js",
   "scripts": {
-    "prepublish": "gulp",
+    "prepublish": "npm run lint && npm test && npm run build",
+    "build": "gulp build",
     "lint": "gulp lint",
     "test-unformatted": "node ./tests/tests.js",
     "test": "npm run test-unformatted | tap-spec",
     "generate-emoji-unicode-version-map": "gulp generate-emoji-unicode-version-map"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "bluebird": "^3.4.7",
     "cheerio": "^0.22.0",

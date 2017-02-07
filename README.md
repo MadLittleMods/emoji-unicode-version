@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/emoji-unicode-version)
+[![npm](https://img.shields.io/npm/v/emoji-unicode-version.svg?style=flat-square)](https://www.npmjs.com/package/emoji-unicode-version)
 
 # emoji-unicode-version
 
@@ -43,7 +43,9 @@ console.log(emojiNameToUnicodeVersion(unicodeToName('🤣')));
 
 # About
 
-We currently grab the emoji versions from [Emojipedia](http://emojipedia.org/unicode-6.1/).
+Emoji name list is pulled from [EmojiOne](https://github.com/Ranks/emojione)
+
+We  grab the emoji unicode versions from [Emojipedia](http://emojipedia.org/unicode-6.1/).
 
 [ZWJ sequences](http://emojipedia.org/emoji-zwj-sequences/) use the unicode version for the highest individual emoji in the sequence.
 
