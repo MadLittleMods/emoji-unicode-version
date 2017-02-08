@@ -97,6 +97,11 @@ function generateEmojiUnicodeVersionMap() {
 		Object.keys(emojiMap).forEach((emojiNameKey) => {
 			const emojiInfo = emojiMap[emojiNameKey];
 			emojiToUnicodeVersionMap[emojiNameKey] = emojiInfo.unicodeVersion;
+			// Also loop through the aliases
+			(emojiInfo.aliases || []).forEach((aliasShortName) => {
+				const aliasName = aliasShortName.slice(1, aliasShortName.length - 1);
+				emojiToUnicodeVersionMap[aliasName] = emojiInfo.unicodeVersion;
+			});
 		});
 		return emojiToUnicodeVersionMap;
 	});

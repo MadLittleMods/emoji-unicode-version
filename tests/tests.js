@@ -46,4 +46,9 @@ testNameToUnicodeVersion('rofl', '9.0');
 testNameToUnicodeVersion('blue_circle', '6.0');
 testNameToUnicodeVersion('large_blue_circle', '6.0');
 
+// Test if aliases are present
+testNameToUnicodeVersion('thumbsup', '6.0');
+testNameToUnicodeVersion('thumbup', '6.0');
+testNameToUnicodeVersion('+1', '6.0');
+
 testNameToUnicodeVersion('flag_us', '6.0');
