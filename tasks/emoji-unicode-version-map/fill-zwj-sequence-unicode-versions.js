@@ -10,7 +10,7 @@ function fillZwjSequenceUnicodeVersions(emojiMap) {
 		// Flags are ZWJ sequences made up of regional indicator symbol letters
 		// See http://emojipedia.org/unicode-6.0/
 		if (emojiNameKey.indexOf('flag_') === 0) {
-			emoji.unicodeVersion = 6.0;
+			emoji.unicodeVersion = '6.0';
 		}
 		// If general ZWJ sequence
 		else if(!emoji.unicodeVersion && emojiHexCodePoints.length > 1) {
@@ -29,7 +29,6 @@ function fillZwjSequenceUnicodeVersions(emojiMap) {
 
 				return unicodeVersion;
 			}, 0);
-
 			emoji.unicodeVersion = unicodeVersionString || false;
 		}
 	});

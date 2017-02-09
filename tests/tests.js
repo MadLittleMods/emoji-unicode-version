@@ -20,7 +20,7 @@ let testNameToUnicodeVersion = function(name, inputName, expected) {
 		test(`generateEmojiUnicodeVersionMap: ${name}`, (t) => {
 			t.plan(1);
 
-			t.equal(nameToUnicodeVersion(inputName), expected);
+			t.strictEqual(nameToUnicodeVersion(inputName), expected);
 		});
 	}
 };
