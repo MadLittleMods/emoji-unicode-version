@@ -21,10 +21,7 @@ gulp.task('lint', gulp.series(
 
 
 gulp.task('generate-emoji-unicode-version-map', () => {
-	return generateEmojiUnicodeVersionMap()
-		.then((emojiUnicodeVersionMap) => {
-			return outputFile('./emoji-unicode-version-map.json', JSON.stringify(emojiUnicodeVersionMap, null, '\t'));
-		});
+	return outputFile('./emoji-unicode-version-map.json', JSON.stringify(generateEmojiUnicodeVersionMap(), null, '\t'));
 });
 
 gulp.task('build', gulp.series(
