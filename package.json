@@ -29,7 +29,7 @@
     "emojione": "^2.2.7",
     "eslint": "^3.15.0",
     "fs-extra": "^2.0.0",
-    "gulp": "gulpjs/gulp#4.0",
+    "gulp": "^4.0.0",
     "gulp-eslint": "^3.0.1",
     "isomorphic-fetch": "^2.2.1",
     "sanitize-filename": "^1.6.1",
