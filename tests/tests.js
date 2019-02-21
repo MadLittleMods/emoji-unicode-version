@@ -15,12 +15,12 @@ var opts = yargs
 const grepRe = new RegExp(opts.grep);
 
 
-let testNameToUnicodeVersion = function(name, inputName, expected) {
+let testNameToUnicodeVersion = function(name, expected) {
 	if(!opts.grep || (opts.grep && grepRe.test(name))) {
 		test(`generateEmojiUnicodeVersionMap: ${name}`, (t) => {
 			t.plan(1);
 
-			t.strictEqual(nameToUnicodeVersion(inputName), expected);
+			t.strictEqual(nameToUnicodeVersion(name), expected);
 		});
 	}
 };
@@ -33,7 +33,7 @@ testNameToUnicodeVersion('zap', '4.0');
 testNameToUnicodeVersion('gear', '4.1');
 testNameToUnicodeVersion('mahjong', '5.1');
 testNameToUnicodeVersion('soccer', '5.2');
-testNameToUnicodeVersion('japanese_goblin0', '6.0');
+testNameToUnicodeVersion('japanese_goblin', '6.0');
 testNameToUnicodeVersion('expressionless', '6.1');
 testNameToUnicodeVersion('spy', '7.0');
 testNameToUnicodeVersion('metal', '8.0');
