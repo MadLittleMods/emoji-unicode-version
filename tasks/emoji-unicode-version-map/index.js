@@ -5,7 +5,28 @@ const aliasMap = {
 	// Commit that changed the name: https://github.com/Ranks/emojione/commit/dbf2df55150fbcce295e480aede2c603fb51ec12
 	'large_blue_circle': 'blue_circle',
 	// Commit that changed the name: https://github.com/Ranks/emojione/commit/48ab43b4af82f752a84065913ee6b47b01398b86
-	'ten': 'keycap_ten'
+	'ten': 'keycap_ten',
+	// Tone variants removed in Emojione 3+
+	'wrestlers_tone1': 'wrestlers',
+	'wrestling_tone1': 'wrestling',
+	'wrestlers_tone2': 'wrestlers',
+	'wrestling_tone2': 'wrestling',
+	'wrestlers_tone3': 'wrestlers',
+	'wrestling_tone3': 'wrestling',
+	'wrestlers_tone4': 'wrestlers',
+	'wrestling_tone4': 'wrestling',
+	'wrestlers_tone5': 'wrestlers',
+	'wrestling_tone5': 'wrestling',
+	'handshake_tone1': 'handshake',
+	'shaking_hands_tone1': 'shaking_hands',
+	'handshake_tone2': 'handshake',
+	'shaking_hands_tone2': 'shaking_hands',
+	'handshake_tone3': 'handshake',
+	'shaking_hands_tone3': 'shaking_hands',
+	'handshake_tone4': 'handshake',
+	'shaking_hands_tone4': 'shaking_hands',
+	'handshake_tone5': 'handshake',
+	'shaking_hands_tone5': 'shaking_hands',
 };
 
 
