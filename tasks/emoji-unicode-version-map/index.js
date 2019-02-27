@@ -35,8 +35,29 @@ function generateEmojiUnicodeVersionMap() {
 		emojiToUnicodeVersionMap[aliasName] = emojiToUnicodeVersionMap[aliasReferenceName];
 	});
 
-	return emojiToUnicodeVersionMap;
+	let missingVersionCount = 0;
+	let notStringVersionCount = 0;
 
+	Object.keys(emojiToUnicodeVersionMap).forEach((emojiNameKey) => {
+		const version = emojiToUnicodeVersionMap[emojiNameKey];
+
+		if(version === undefined) {
+			console.log(`Missing unicodeVersion property on \`${emojiNameKey}\``);
+			missingVersionCount += 1;
+		}
+		if(typeof version !== 'string') {
+			console.log(`Invalid unicodeVersion property, must be string on \`${emojiNameKey}\``);
+			notStringVersionCount += 1;
+		}
+	});
+	if(missingVersionCount > 0) {
+		throw new Error(`Missing unicodeVersion property on ${missingVersionCount} emojis`);
+	}
+	if(notStringVersionCount > 0) {
+		throw new Error(`unicodeVersion property not a string for ${notStringVersionCount} emojis`);
+	}
+
+	return emojiToUnicodeVersionMap;
 }
 
 
