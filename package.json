@@ -18,7 +18,7 @@
   "scripts": {
     "prepublish": "npm run lint && npm test && npm run build",
     "build": "gulp build",
-    "lint": "gulp lint",
+    "lint": "eslint \"**/*.js\" --ignore-pattern node_modules",
     "test-unformatted": "node ./tests/tests.js",
     "test": "npm run test-unformatted | tap-spec",
     "compare-maps": "node ./tasks/compare-maps.js",
@@ -30,7 +30,6 @@
     "eslint": "^5.15.3",
     "fs-extra": "^2.0.0",
     "gulp": "^4.0.0",
-    "gulp-eslint": "^5.0.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.6.3",
     "yargs": "^6.6.0"
