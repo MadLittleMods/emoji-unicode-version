@@ -42,7 +42,7 @@ function generateEmojiUnicodeVersionMap() {
 		const unicodeVersion = emoji.unicode_version.toFixed(1);
 
 		if (emoji.unicode_version !== parseFloat(unicodeVersion)) {
-			throw new Error(`Unsupported Unicode version ${emoji.unicode_version}`);
+			throw new Error(`Unsupported Unicode version "${emoji.unicode_version}" parsed as "${unicodeVersion}" which don't match. We probably need to update the version number to string conversion code just above where this error is thrown`);
 		}
 
 		emojiToUnicodeVersionMap[emojiNameKey] = unicodeVersion;
