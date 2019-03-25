@@ -1,6 +1,6 @@
 {
   "name": "emoji-unicode-version",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Get the unicode version for a given emoji name",
   "author": "Eric Eastwood <contact@ericeastwood.com> (http://ericeastwood.com/)",
   "license": "MIT",
