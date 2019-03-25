@@ -1,10 +1,10 @@
 const fs = require('fs');
 
-const argv = require('yargs/yargs')(process.argv.slice(2)).argv;
+const yargs = require('yargs');
 
 const currentMap = require('../emoji-unicode-version-map.json');
 
-const oldMap = JSON.parse(fs.readFileSync(argv._[0], {encoding: 'utf-8'}));
+const oldMap = JSON.parse(fs.readFileSync(yargs.argv._[0], {encoding: 'utf-8'}));
 
 let missingNames = 0;
 let changes = 0;
