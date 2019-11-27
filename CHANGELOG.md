@@ -2,7 +2,7 @@
 
 Developer facing:
 
-- Drop `gulp-eslint` to run `gulp`
+- Drop `gulp-eslint` to run `eslint`
   - Thanks to [@stof](https://github.com/stof) for the contribution, https://github.com/MadLittleMods/emoji-unicode-version/pull/7
 
 # v0.3.0 - 2018-2-25
